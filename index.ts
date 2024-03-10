@@ -6,7 +6,7 @@ const port: number = 5000
 app.use(cors())
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("Hello World!")
+  res.send({ message: "Hello World!" })
 })
 
 app.listen(port, () => {
