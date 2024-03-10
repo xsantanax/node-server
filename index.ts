@@ -1,7 +1,7 @@
-import express, { Request, Response } from "express"
+import express, { Express, Request, Response } from "express"
 
-const app = express()
-const port = 5000
+const app: Express = express()
+const port: number = 5000
 
 app.get("/", (req: Request, res: Response) => {
   res.send("Hello World!")
